@@ -11,7 +11,7 @@ sudo rm -f /usr/local/bin/tuic && curl -Lo /usr/local/bin/tuic https://github.co
 :. **linux-arm64**
 
 ```
-sudo rm -f /usr/local/bin/tuic && curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tuic-server-0.8.5-aarch64-linux-musl && chmod +x /usr/local/bin/tuic
+sudo rm -f /usr/local/bin/tuic && curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-aarch64-linux-musl && chmod +x /usr/local/bin/tuic
 ```
 
 2. 下载配置
