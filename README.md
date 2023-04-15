@@ -5,13 +5,15 @@
 :. **linux-amd64**
 
 ```
-sudo rm -f /usr/local/bin/tuic && curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-x86_64-linux-musl && chmod +x /usr/local/bin/tuic
+sudo curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-x86_64-linux-musl
+sudo chmod +x /usr/local/bin/tuic
 ```
 
 :. **linux-arm64**
 
 ```
-sudo rm -f /usr/local/bin/tuic && curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-aarch64-linux-musl && chmod +x /usr/local/bin/tuic
+sudo curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-aarch64-linux-musl
+sudo chmod +x /usr/local/bin/tuic
 ```
 
 2. 下载配置
@@ -23,7 +25,8 @@ sudo mkdir -p /etc/tuic && curl -Lo /etc/tuic/config.json https://raw.githubuser
 3. 下载systemctl配置
 
 ```
-curl -Lo /etc/systemd/system/tuic.service https://raw.githubusercontent.com/fy-deng/tuic-install/diy/tuic.service && systemctl daemon-reload
+sudo curl -Lo /etc/systemd/system/tuic.service https://raw.githubusercontent.com/fy-deng/tuic-install/diy/tuic.service
+sudo systemctl daemon-reload
 ```
 
 4. 上传证书和私钥
@@ -33,7 +36,9 @@ curl -Lo /etc/systemd/system/tuic.service https://raw.githubusercontent.com/fy-d
 5. 启动程序
 
 ```
- systemctl enable --now tuic && sleep 0.2 && systemctl status tuic
+sudo systemctl enable --now tuic
+sleep 0.2
+sudo systemctl status tuic
 ```
 
 | 项目 | |
