@@ -19,7 +19,7 @@ sudo chmod +x /usr/local/bin/tuic
 2. 下载配置
 
 ```
-sudo mkdir -p /etc/tuic && curl -Lo /etc/tuic/config.json https://raw.githubusercontent.com/fy-deng/tuic-install/diy/config_server.json
+sudo mkdir -p /etc/tuic && sudo curl -Lo /etc/tuic/config.json https://raw.githubusercontent.com/fy-deng/tuic-install/diy/config_server.json
 ```
 
 3. 下载systemctl配置
