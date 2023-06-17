@@ -5,14 +5,14 @@
 :. **linux-amd64**
 
 ```
-sudo curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-x86_64-linux-musl
+sudo curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/1.0.0/tuic-server-1.0.0-x86_64-linux-musl
 sudo chmod +x /usr/local/bin/tuic
 ```
 
 :. **linux-arm64**
 
 ```
-sudo curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-aarch64-linux-musl
+sudo curl -Lo /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/1.0.0/tuic-server-1.0.0-aarch64-linux-musl
 sudo chmod +x /usr/local/bin/tuic
 ```
 
@@ -53,7 +53,7 @@ sudo systemctl status tuic
 
 <details><summary>点击查看</summary>
 
-1. 下载Windows客户端程序[tuic-client-0.8.5-x86_64-windows-msvc.exe](https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-client-0.8.5-x86_64-windows-msvc.exe)，重命名为tuic.exe，复制到v2rayN\bin\tuic文件夹。
+1. 下载Windows客户端程序[tuic-client-1.0.0-x86_64-windows-msvc.exe](https://github.com/EAimTY/tuic/releases/download/1.0.0/tuic-client-1.0.0-x86_64-windows-msvc.exe)，重命名为tuic.exe，复制到v2rayN\bin\tuic文件夹。
 
 2. 下载客户端配置[config_client.json](https://raw.githubusercontent.com/fy-deng/tuic-install/diy/config_client.json)，修改chika.example.com为证书中包含的域名，修改10.0.0.1为VPS的IP。
 
